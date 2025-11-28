@@ -1,4 +1,4 @@
-import { Award, Briefcase, Code, Database, FileJson2, Github, Wrench } from 'lucide-react';
+import { Award, Briefcase, Code, Database, FileJson2, Github, Users, Wrench, Rocket, Coffee, BarChart, Figma, PenTool } from 'lucide-react';
 
 export const portfolioData = {
   name: "Ayush Dhanawade",
@@ -28,11 +28,11 @@ export const portfolioData = {
   skills: [
     {
       category: "Top Skills",
-      icon: Award,
+      icon: Code,
       list: [
-        { name: "Full Stack Development", icon: Briefcase },
-        { name: "Web Development", icon: Code },
-        { name: "UI/UX Design", icon: FileJson2 }
+        { name: "Business", icon: Briefcase },
+        { name: "Startups", icon: Rocket },
+        { name: "HTML/CSS", icon: FileJson2 }
       ]
     },
     {
@@ -41,29 +41,28 @@ export const portfolioData = {
       list: [
         { name: "JavaScript", icon: Code },
         { name: "TypeScript", icon: Code },
+        { name: "Java", icon: Coffee },
         { name: "Python", icon: Code },
-        { name: "Java", icon: Code },
-        { name: "C++", icon: Code }
+        { name: "HTML/CSS", icon: Code }
       ]
     },
     {
       category: "Databases",
       icon: Database,
       list: [
-        { name: "MongoDB", icon: Database },
-        { name: "MySQL", icon: Database },
-        { name: "Firebase", icon: Database }
+        { name: "MYSQL", icon: Database }
       ]
     },
     {
       category: "Tools & Soft Skills",
       icon: Wrench,
       list: [
-        { name: "Git & GitHub", icon: Github },
-        { name: "Node.js", icon: Code },
-        { name: "React", icon: Code },
-        { name: "Next.js", icon: Code },
-        { name: "Teamwork", icon: Briefcase }
+        { name: "GitHub", icon: Github },
+        { name: "Figma", icon: Figma },
+        { name: "Tableau", icon: BarChart },
+        { name: "PowerBI", icon: BarChart },
+        { name: "Canva", icon: PenTool },
+        { name: "Teamwork", icon: Users }
       ]
     }
   ],
