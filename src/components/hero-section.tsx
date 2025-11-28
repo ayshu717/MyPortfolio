@@ -1,10 +1,19 @@
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { portfolioData } from '@/lib/portfolio-data';
 import imageSources from '@/lib/placeholder-images.json';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Instagram, FileText, Mail } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { 
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogDescription,
+} from '@/components/ui/dialog';
 
 export function HeroSection() {
   const headshot = imageSources.placeholderImages.find(img => img.id === 'ayush-headshot');
@@ -23,12 +32,18 @@ export function HeroSection() {
             {portfolioData.bio}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" className="transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <Link href={portfolioData.resumeUrl} target="_blank" rel="noopener noreferrer">
-                <FileText />
-                View Resume
-              </Link>
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button size="lg" className="transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                  <FileText />
+                  View Resume
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[80vw] h-[90vh] p-0">
+                  <div className="elfsight-app-08975646-328d-4e28-871b-6b7e5947cc4e" data-elfsight-app-lazy></div>
+              </DialogContent>
+            </Dialog>
+
             <Button asChild variant="secondary" size="lg" className="transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
               <Link href="#contact">
                 <Mail />
