@@ -23,7 +23,7 @@ export const portfolioData = {
 
   about: {
     title: "About Me",
-    description: "I am a Computer Engineering student at Pune Vidhyarthi Griha's College of Engineering and Technology. My journey in the world of programming started with a simple 'Hello, World!' and has since grown into a full-fledged passion for building scalable and user-friendly web applications. I thrive on challenges and am constantly seeking to learn new technologies and improve my craft. When I'm not coding, you can find me behind the lens, capturing moments, or exploring new creative endeavors."
+    description: "I’m Ayush a curious mind learning how to build for the web and express creatively through the lens. As a Computer Engineering student at PVGCOET, I’m currently diving into full stack development (MERN) and sharpening my problem-solving with Java and DSA. I love creating things that not only work well, but feel right  whether it’s a personal project or a team collaboration, the process of figuring things out from scratch excites me.  Outside of tech, I run Flora Flicks, where I explore photography and visual storytelling. It keeps me grounded, observant, and detail-oriented qualities that help me write better code and build better experiences. I’m also an active member of ACES, where I get to work at the intersection of design, tech, and teamwork."
   },
 
   skills: [
@@ -113,7 +113,7 @@ export const portfolioData = {
       title: "Flora Flicks",
       imageIds: ["flora-flicks-1", "flora-flicks-2", "flora-flicks-3"],
       description: "Framing the whispers of nature one cloud, one sunset, one moment at a time. A space for Photography, Cinematic Shots, and Cloud Chasing. Reached 500K+ people with visuals of sunsets, silence, and soft hues.",
-      technologies: ["Photography", "Cinematic Shots", "Cloud Chasing"],
+      technologies: ["Photography", "Cinematic Shots", "Cloud Chasing", "Digital Storytelling", "Editing"],
       instagramUrl: "https://www.instagram.com/floraflicks_/"
     }
   ],
