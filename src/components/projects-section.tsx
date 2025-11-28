@@ -28,7 +28,7 @@ export function ProjectsSection() {
                   <div className="relative">
                     {projectImages.length > 1 ? (
                       <AutoPlayCarousel images={projectImages} />
-                    ) : projectImages.length === 1 && projectImages[0] ? (
+                    ) : projectImages.length === 1 ? (
                       <div className="aspect-w-16 aspect-h-9">
                         <Image
                           src={projectImages[0].imageUrl}
