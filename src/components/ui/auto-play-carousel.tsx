@@ -52,7 +52,7 @@ export function AutoPlayCarousel({ images, className }: AutoPlayCarouselProps) {
       <CarouselContent>
         {images.map((image) => (
           <CarouselItem key={image.id}>
-            <div className="aspect-w-16 aspect-h-9 overflow-hidden rounded-t-lg">
+            <div className="aspect-w-16 aspect-h-9">
               <Image
                 src={image.imageUrl}
                 alt={image.description}

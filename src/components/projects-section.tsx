@@ -24,21 +24,23 @@ export function ProjectsSection() {
 
             return (
               <Card key={project.title} className="flex flex-col overflow-hidden">
-                <CardContent className="p-0">
-                  <div className="aspect-w-16 aspect-h-9">
+                <CardContent className="p-0 flex flex-col flex-grow">
+                  <div>
                     {projectImages.length > 1 ? (
                       <AutoPlayCarousel images={projectImages} />
                     ) : projectImages[0] && (
-                      <Image
-                        src={projectImages[0].imageUrl}
-                        alt={projectImages[0].description}
-                        layout="fill"
-                        className="object-cover"
-                        data-ai-hint={projectImages[0].imageHint}
-                      />
+                      <div className="aspect-w-16 aspect-h-9">
+                        <Image
+                          src={projectImages[0].imageUrl}
+                          alt={projectImages[0].description}
+                          layout="fill"
+                          className="object-cover"
+                          data-ai-hint={projectImages[0].imageHint}
+                        />
+                      </div>
                     )}
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                     <p className="text-muted-foreground mb-4 flex-grow">{project.description}</p>
                     <div className="flex flex-wrap gap-2 mb-6">
@@ -46,7 +48,7 @@ export function ProjectsSection() {
                         <Badge key={tech} variant="secondary">{tech}</Badge>
                       ))}
                     </div>
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 mt-auto">
                       {project.sourceCodeUrl && (
                         <Button asChild variant="outline">
                           <Link href={project.sourceCodeUrl} target="_blank" rel="noopener noreferrer">
