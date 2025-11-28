@@ -21,7 +21,7 @@ export function SkillsSection() {
               <ul className="space-y-3">
                 {skillCategory.list.map((skill) => (
                   <li key={skill.name} className="flex items-center gap-3">
-                    <skill.icon className="w-4 h-4 text-muted-foreground" />
+                    <skill.icon className="w-4 h-4 text-primary" />
                     <span className="text-sm">{skill.name}</span>
                   </li>
                 ))}
