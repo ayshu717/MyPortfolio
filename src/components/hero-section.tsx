@@ -14,9 +14,22 @@ import {
   DialogTrigger,
   DialogDescription,
 } from '@/components/ui/dialog';
+import * as React from 'react';
 
 export function HeroSection() {
   const headshot = imageSources.placeholderImages.find(img => img.id === 'ayush-headshot');
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const href = e.currentTarget.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      e.preventDefault();
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
 
   return (
     <section id="home" className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-32">
@@ -45,7 +58,7 @@ export function HeroSection() {
             </Dialog>
 
             <Button asChild variant="secondary" size="lg" className="transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <Link href="#contact">
+              <Link href="#contact" onClick={handleLinkClick}>
                 <Mail />
                 Contact Me
               </Link>
