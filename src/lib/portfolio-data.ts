@@ -81,7 +81,7 @@ export const portfolioData = {
       description: "A dynamic quiz application that allows users to test their knowledge on various subjects. Features include timed quizzes, score tracking, a leaderboard, and smooth, responsive quiz interactions for an engaging learning experience.",
       technologies: ["HTML", "CSS", "JS", "Firebase", "Tailwind CSS"],
       sourceCodeUrl: "https://github.com/ayshu717/Quiz-Master",
-      liveUrl: "https://quiz-master-sandy.vercel.app/"
+      liveUrl: "https://quizz-masterpvg.netlify.app/"
     },
     {
       title: "Leave Management System",
