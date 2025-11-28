@@ -23,10 +23,10 @@ export function HeroSection() {
             {portfolioData.bio}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg">
+            <Button asChild size="lg" className="transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
               <Link href={portfolioData.resumeUrl} target="_blank" rel="noopener noreferrer">View Resume</Link>
             </Button>
-            <Button asChild variant="secondary" size="lg">
+            <Button asChild variant="secondary" size="lg" className="transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
               <Link href="#contact">Contact Me</Link>
             </Button>
           </div>
@@ -47,15 +47,17 @@ export function HeroSection() {
         </div>
         <div className="flex justify-center items-center animate-in fade-in slide-in-from-bottom-12 duration-500 ease-out delay-150">
           {headshot && (
-            <div className="relative w-[400px] h-[400px] rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
-              <Image
-                src={headshot.imageUrl}
-                alt={headshot.description}
-                fill
-                className="object-cover"
-                priority
-                data-ai-hint={headshot.imageHint}
-              />
+            <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px]">
+              <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
+                <Image
+                  src={headshot.imageUrl}
+                  alt={headshot.description}
+                  fill
+                  className="object-cover"
+                  priority
+                  data-ai-hint={headshot.imageHint}
+                />
+              </div>
             </div>
           )}
         </div>
