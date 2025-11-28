@@ -75,7 +75,7 @@ export const portfolioData = {
   
   projects: [
     {
-      title: "StillMe Clothing",
+      title: "StillMeStore Clothing",
       imageIds: ["quiz-master-1", "quiz-master-2"],
       description: "A dynamic quiz application that allows users to test their knowledge on various subjects. Features include timed quizzes, score tracking, and a leaderboard.",
       technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "MongoDB"],
@@ -112,8 +112,8 @@ export const portfolioData = {
     {
       title: "Flora Flicks",
       imageIds: ["flora-flicks-1", "flora-flicks-2", "flora-flicks-3"],
-      description: "An Instagram-based photography page showcasing original work in nature, portrait, and urban storytelling.",
-      technologies: ["Photography", "Digital Storytelling", "Cinematic video", "Nature"],
+      description: "Framing the whispers of nature one cloud, one sunset, one moment at a time. A space for Photography, Cinematic Shots, and Cloud Chasing. Reached 500K+ people with visuals of sunsets, silence, and soft hues.",
+      technologies: ["Photography", "Cinematic Shots", "Cloud Chasing"],
       instagramUrl: "https://www.instagram.com/floraflicks_/"
     }
   ],
