@@ -2,7 +2,7 @@ import { Award, Briefcase, Code, Database, FileJson2, Github, Wrench } from 'luc
 
 export const portfolioData = {
   name: "Ayush Dhanawade",
-  title: "Computer Engineering'27 | Student at PVGCOET | Full Stack Developer...",
+  title: "Computer Engineering'27 | Student at PVGCOET | Frontend Developer | Photographer @ Flora Flicks | Building @stillmestore",
   bio: "A curious learner and a passionate developer, exploring the endless possibilities of technology. I am driven by the desire to build things that are both useful and beautiful.",
   
   contact: {
