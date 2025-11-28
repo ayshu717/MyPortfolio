@@ -16,16 +16,16 @@ export function ProjectsSection() {
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Featured Projects</h2>
           <p className="mt-2 text-lg text-muted-foreground">A selection of projects I'm proud of.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioData.projects.map((project) => {
             const projectImages = project.imageIds
               .map(id => imageSources.placeholderImages.find(img => img.id === id))
-              .filter(Boolean);
+              .filter(Boolean) as (typeof imageSources.placeholderImages);
 
             return (
               <Card key={project.title} className="flex flex-col overflow-hidden">
                 <CardContent className="p-0 flex flex-col flex-grow">
-                  <div>
+                  <div className="relative">
                     {projectImages.length > 1 ? (
                       <AutoPlayCarousel images={projectImages} />
                     ) : projectImages[0] && (
