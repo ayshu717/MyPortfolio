@@ -30,39 +30,39 @@ export const portfolioData = {
       category: "Top Skills",
       icon: Code,
       list: [
-        { name: "Next.js", icon: Code },
-        { name: "React", icon: Code },
-        { name: "TypeScript", icon: Code },
-        { name: "Node.js", icon: Code },
+        { name: "Business", icon: Briefcase },
+        { name: "Startups", icon: Rocket },
+        { name: "HTML", icon: Code },
       ]
     },
     {
       category: "Languages",
       icon: Code,
       list: [
-        { name: "JavaScript", icon: Code },
-        { name: "TypeScript", icon: Code },
+        { name: "JavaScript", icon: FileJson2 },
+        { name: "TypeScript", icon: FileJson2 },
         { name: "Java", icon: Coffee },
         { name: "Python", icon: Code },
-        { name: "HTML/CSS", icon: Code }
+        { name: "HTML/CSS", icon: FileJson2 }
       ]
     },
     {
       category: "Databases",
       icon: Database,
       list: [
-        { name: "MongoDB", icon: Database },
         { name: "MySQL", icon: Database }
       ]
     },
     {
-      category: "Tools & Frameworks",
+      category: "Tools & Soft Skills",
       icon: Wrench,
       list: [
-        { name: "Git & GitHub", icon: Github },
+        { name: "GitHub", icon: Github },
         { name: "Figma", icon: Figma },
-        { name: "Tailwind CSS", icon: Code },
-        { name: "Firebase", icon: Code },
+        { name: "Tableau", icon: BarChart },
+        { name: "PowerBI", icon: BarChart },
+        { name: "Canva", icon: PenTool },
+        { name: "Teamwork", icon: Users },
       ]
     }
   ],
