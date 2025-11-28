@@ -77,7 +77,7 @@ export const portfolioData = {
     {
       title: "StillMeStore Clothing",
       imageIds: ["quiz-master-1", "quiz-master-2"],
-      description: "A dynamic quiz application that allows users to test their knowledge on various subjects. Features include timed quizzes, score tracking, and a leaderboard.",
+      description: "A custom apparel brand crafting personalized t-shirts, hoodies, and jackets with quality and creativity. From individual designs to bulk college & sports orders  ,we bring ideas to life with quality and creativity.",
       technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "MongoDB"],
       sourceCodeUrl: "https://github.com/d-ayush/Quiz-Master",
       liveUrl: "https://quiz-master-sandy.vercel.app/"
