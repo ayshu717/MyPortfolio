@@ -47,15 +47,16 @@ export function HeroSection() {
         </div>
         <div className="flex justify-center items-center animate-in fade-in slide-in-from-bottom-12 duration-500 ease-out delay-150">
           {headshot && (
-            <Image
-              src={headshot.imageUrl}
-              alt={headshot.description}
-              width={400}
-              height={400}
-              className="rounded-full object-cover border-4 border-primary/20 shadow-lg"
-              priority
-              data-ai-hint={headshot.imageHint}
-            />
+            <div className="relative w-[400px] h-[400px] rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
+              <Image
+                src={headshot.imageUrl}
+                alt={headshot.description}
+                fill
+                className="object-cover"
+                priority
+                data-ai-hint={headshot.imageHint}
+              />
+            </div>
           )}
         </div>
       </div>
