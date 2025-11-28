@@ -49,8 +49,9 @@ export function Header() {
         <div className="flex items-center gap-2">
            <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+              <Link key={link.href} href={link.href} className="group text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
                 {link.name}
+                <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-primary"></span>
               </Link>
             ))}
           </nav>
