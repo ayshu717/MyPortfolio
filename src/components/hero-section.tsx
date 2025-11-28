@@ -13,7 +13,7 @@ export function HeroSection() {
     <section id="home" className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-32">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6 animate-in fade-in slide-in-from-bottom-12 duration-500 ease-out">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-primary">
             {portfolioData.name}
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground">
