@@ -43,8 +43,11 @@ export const portfolioData = {
         icon: Languages,
         list: [
             { name: "Java", icon: Coffee },
-            { name: "Python", icon: Pilcrow },
+            { name: "HTML", icon: Code },
+            { name: "CSS", icon: Palette },
             { name: "JavaScript", icon: Braces },
+            { name: "TypeScript", icon: Braces },
+            { name: "Python(Basic)", icon: Pilcrow },
         ],
     },
     {
