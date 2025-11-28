@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { portfolioData } from '@/lib/portfolio-data';
 import imageSources from '@/lib/placeholder-images.json';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ExternalLink } from 'lucide-react';
@@ -21,28 +21,26 @@ export function CoCurricularSection() {
             .filter(Boolean);
 
           return (
-            <Card key={activity.title} className="flex flex-col">
+            <Card key={activity.title} className="flex flex-col overflow-hidden">
               <AutoPlayCarousel images={activityImages} />
-              <CardHeader>
-                <CardTitle>{activity.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{activity.description}</p>
+              <CardContent className="p-6 flex flex-col flex-grow gap-y-4">
+                <h3 className="text-2xl font-bold">{activity.title}</h3>
+                <p className="text-muted-foreground flex-grow">{activity.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {activity.technologies.map((tech) => (
                     <Badge key={tech} variant="secondary">{tech}</Badge>
                   ))}
                 </div>
+                <div className="pt-4 text-center">
+                  {activity.instagramUrl && (
+                    <Button asChild>
+                      <Link href={activity.instagramUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" /> Visit Page
+                      </Link>
+                    </Button>
+                  )}
+                </div>
               </CardContent>
-              <CardFooter className="justify-center">
-                {activity.instagramUrl && (
-                  <Button asChild>
-                    <Link href={activity.instagramUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" /> Visit Page
-                    </Link>
-                  </Button>
-                )}
-              </CardFooter>
             </Card>
           );
         })}

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { portfolioData } from '@/lib/portfolio-data';
 import imageSources from '@/lib/placeholder-images.json';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Github, ExternalLink } from 'lucide-react';
@@ -23,11 +23,11 @@ export function ProjectsSection() {
               .filter(Boolean);
 
             return (
-              <Card key={project.title} className="flex flex-col">
+              <Card key={project.title} className="flex flex-col overflow-hidden">
                 {projectImages.length > 1 ? (
                   <AutoPlayCarousel images={projectImages} />
                 ) : projectImages[0] && (
-                  <div className="aspect-w-16 aspect-h-9 overflow-hidden rounded-t-lg">
+                  <div className="aspect-w-16 aspect-h-9 overflow-hidden">
                     <Image
                       src={projectImages[0].imageUrl}
                       alt={projectImages[0].description}
@@ -38,31 +38,29 @@ export function ProjectsSection() {
                     />
                   </div>
                 )}
-                <CardHeader>
-                  <CardTitle>{project.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
+                 <CardContent className="p-6 flex flex-col flex-grow gap-y-4">
+                  <h3 className="text-2xl font-bold">{project.title}</h3>
+                  <p className="text-muted-foreground flex-grow">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <Badge key={tech} variant="secondary">{tech}</Badge>
                     ))}
                   </div>
-                </CardContent>
-                <CardFooter className="flex gap-4">
-                  <Button asChild variant="outline">
-                    <Link href={project.sourceCodeUrl} target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" /> View Source
-                    </Link>
-                  </Button>
-                  {project.liveUrl && (
-                    <Button asChild>
-                      <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="mr-2 h-4 w-4" /> View Live
+                  <div className="pt-4 flex gap-4">
+                    <Button asChild variant="outline">
+                      <Link href={project.sourceCodeUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="mr-2 h-4 w-4" /> View Source
                       </Link>
                     </Button>
-                  )}
-                </CardFooter>
+                    {project.liveUrl && (
+                      <Button asChild>
+                        <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="mr-2 h-4 w-4" /> View Live
+                        </Link>
+                      </Button>
+                    )}
+                  </div>
+                </CardContent>
               </Card>
             );
           })}
