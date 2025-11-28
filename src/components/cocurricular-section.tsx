@@ -27,7 +27,7 @@ export function CoCurricularSection() {
                 <CardTitle>{activity.title}</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-sm text-muted-foreground mb-4">{activity.description}</p>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{activity.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {activity.technologies.map((tech) => (
                     <Badge key={tech} variant="secondary">{tech}</Badge>

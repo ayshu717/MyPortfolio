@@ -1,4 +1,4 @@
-import { Award, Briefcase, Code, Database, FileJson2, Github, Users, Wrench, Rocket, Coffee, BarChart, Figma, PenTool } from 'lucide-react';
+import { Award, Briefcase, Code, Database, FileJson2, Github, Users, Wrench, Rocket, Coffee, BarChart, Figma, PenTool, Camera, Film } from 'lucide-react';
 
 export const portfolioData = {
   name: "Ayush Dhanawade",
@@ -30,9 +30,10 @@ export const portfolioData = {
       category: "Top Skills",
       icon: Code,
       list: [
-        { name: "Business", icon: Briefcase },
-        { name: "Startups", icon: Rocket },
-        { name: "HTML/CSS", icon: FileJson2 }
+        { name: "Next.js", icon: Code },
+        { name: "React", icon: Code },
+        { name: "TypeScript", icon: Code },
+        { name: "Node.js", icon: Code },
       ]
     },
     {
@@ -50,19 +51,18 @@ export const portfolioData = {
       category: "Databases",
       icon: Database,
       list: [
-        { name: "MYSQL", icon: Database }
+        { name: "MongoDB", icon: Database },
+        { name: "MySQL", icon: Database }
       ]
     },
     {
-      category: "Tools & Soft Skills",
+      category: "Tools & Frameworks",
       icon: Wrench,
       list: [
-        { name: "GitHub", icon: Github },
+        { name: "Git & GitHub", icon: Github },
         { name: "Figma", icon: Figma },
-        { name: "Tableau", icon: BarChart },
-        { name: "PowerBI", icon: BarChart },
-        { name: "Canva", icon: PenTool },
-        { name: "Teamwork", icon: Users }
+        { name: "Tailwind CSS", icon: Code },
+        { name: "Firebase", icon: Code },
       ]
     }
   ],
@@ -90,8 +90,8 @@ export const portfolioData = {
     {
       title: "Flora Flicks",
       imageIds: ["flora-flicks-1", "flora-flicks-2", "flora-flicks-3"],
-      description: "My personal photography page where I share my passion for capturing the beauty of nature, especially flora. It's a visual journey through my lens.",
-      technologies: ["Photography", "Lightroom", "Instagram"],
+      description: "Framing the whispers of nature one cloud, one sunset, one moment at a time. A space for Photography, Cinematic Shots, and Cloud Chasing. Reached 500K+ people with visuals of sunsets, silence, and soft hues.",
+      technologies: ["Photography", "Cinematography", "Social Media"],
       instagramUrl: "https://www.instagram.com/floraflicks_/"
     }
   ],
