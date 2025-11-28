@@ -15,7 +15,7 @@ export const portfolioData = {
 
   socials: {
     github: "https://github.com/ayshu717",
-    linkedin: "https://www.linkedin.com/in/ayush-dhanawade-089602288/",
+    linkedin: "https://www.linkedin.com/in/ayush-dhanawade717/",
     instagram: "https://www.instagram.com/4y5hu",
   },
 
