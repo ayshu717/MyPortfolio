@@ -83,7 +83,15 @@ export const portfolioData = {
       liveUrl: "https://quiz-master-sandy.vercel.app/"
     },
     {
-      title: "Portfolio Website",
+      title: "Leave Management System",
+      imageIds: ["lms-1"],
+      description: "A comprehensive system for managing employee leave requests. It streamlines the process of requesting, approving, and tracking leaves within an organization.",
+      technologies: ["Java", "Swing", "MySQL"],
+      sourceCodeUrl: "https://github.com/d-ayush/Leave-Management-System",
+      liveUrl: ""
+    },
+    {
+      title: "PRAKRITI",
       imageIds: ["prakriti-1"],
       description: "An initiative website aimed at promoting environmental awareness. The site features articles, event information, and ways for users to get involved in conservation efforts.",
       technologies: ["HTML", "CSS", "JavaScript"],
@@ -95,12 +103,10 @@ export const portfolioData = {
   cocurricular: [
     {
       title: "StillMeStore Clothing",
-      imageIds: ["quiz-master-1", "quiz-master-2"],
-      description: "A custom apparel brand crafting personalized t-shirts, hoodies, and jackets with quality and creativity. From individual designs to bulk college & sports orders, we bring ideas to life with quality and creativity.",
+      imageIds: ["stillme-1", "stillme-2"],
+      description: "A custom apparel brand crafting personalized t-shirts, hoodies, and jackets. From individual designs to bulk college & sports orders, we bring ideas to life with quality and creativity.",
       technologies: ["Communication", "Digital Marketing", "Designing", "Account Handling"],
-      sourceCodeUrl: "https://github.com/d-ayush/Quiz-Master",
-      liveUrl: "https://quiz-master-sandy.vercel.app/",
-      instagramUrl: "#"
+      instagramUrl: "https://www.instagram.com/stillmestore"
     },
     {
       title: "Flora Flicks",
