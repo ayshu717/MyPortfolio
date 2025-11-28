@@ -95,7 +95,7 @@ export const portfolioData = {
       title: "PRAKRITI",
       imageIds: ["prakriti-1"],
       description: "An AI-enabled waste-management platform designed to classify waste, display analytics, and streamline collection processes. Still in development, featuring work on dashboard UI, interactive components, and integration with AI prediction modules.",
-      technologies: ["HTML", "CSS", "JavaScript"],
+      technologies: ["HTML", "CSS", "JavaScript", "Firebase", "Tailwind CSS"],
       sourceCodeUrl: "https://github.com/d-ayush/PRAKRITI",
       liveUrl: "https://d-ayush.github.io/PRAKRITI/"
     }
