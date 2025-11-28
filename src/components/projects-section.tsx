@@ -24,41 +24,44 @@ export function ProjectsSection() {
 
             return (
               <Card key={project.title} className="flex flex-col overflow-hidden">
-                {projectImages.length > 1 ? (
-                  <AutoPlayCarousel images={projectImages} />
-                ) : projectImages[0] && (
-                  <div className="aspect-w-16 aspect-h-9 overflow-hidden">
-                    <Image
-                      src={projectImages[0].imageUrl}
-                      alt={projectImages[0].description}
-                      width={600}
-                      height={400}
-                      className="object-cover w-full h-full"
-                      data-ai-hint={projectImages[0].imageHint}
-                    />
-                  </div>
-                )}
-                 <CardContent className="p-6 flex flex-col flex-grow gap-y-4">
-                  <h3 className="text-2xl font-bold">{project.title}</h3>
-                  <p className="text-muted-foreground flex-grow">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="secondary">{tech}</Badge>
-                    ))}
-                  </div>
-                  <div className="pt-4 flex gap-4">
-                    <Button asChild variant="outline">
-                      <Link href={project.sourceCodeUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="mr-2 h-4 w-4" /> View Source
-                      </Link>
-                    </Button>
-                    {project.liveUrl && (
-                      <Button asChild>
-                        <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="mr-2 h-4 w-4" /> View Live
-                        </Link>
-                      </Button>
+                <CardContent className="p-0">
+                  <div className="aspect-w-16 aspect-h-9">
+                    {projectImages.length > 1 ? (
+                      <AutoPlayCarousel images={projectImages} />
+                    ) : projectImages[0] && (
+                      <Image
+                        src={projectImages[0].imageUrl}
+                        alt={projectImages[0].description}
+                        layout="fill"
+                        className="object-cover"
+                        data-ai-hint={projectImages[0].imageHint}
+                      />
                     )}
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
+                    <p className="text-muted-foreground mb-4 flex-grow">{project.description}</p>
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {project.technologies.map((tech) => (
+                        <Badge key={tech} variant="secondary">{tech}</Badge>
+                      ))}
+                    </div>
+                    <div className="flex gap-4">
+                      {project.sourceCodeUrl && (
+                        <Button asChild variant="outline">
+                          <Link href={project.sourceCodeUrl} target="_blank" rel="noopener noreferrer">
+                            <Github className="mr-2" /> View Source
+                          </Link>
+                        </Button>
+                      )}
+                      {project.liveUrl && (
+                        <Button asChild>
+                          <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="mr-2" /> View Live
+                          </Link>
+                        </Button>
+                      )}
+                    </div>
                   </div>
                 </CardContent>
               </Card>

@@ -23,53 +23,52 @@ export function CoCurricularSection() {
 
           return (
             <Card key={activity.title} className="flex flex-col overflow-hidden">
-               <CardContent className="p-6 flex flex-col flex-grow">
-                <div className="mb-6">
-                  {activityImages.length > 1 ? (
-                    <AutoPlayCarousel images={activityImages} className="-mx-6 -mt-6" />
-                  ) : activityImages[0] && (
-                    <div className="overflow-hidden -mx-6 -mt-6 rounded-t-lg">
-                      <Image
-                        src={activityImages[0].imageUrl}
-                        alt={activityImages[0].description}
-                        width={600}
-                        height={400}
-                        className="object-cover w-full h-auto aspect-[16/9]"
-                        data-ai-hint={activityImages[0].imageHint}
-                      />
+              <CardContent className="p-0">
+                  <div className="aspect-w-16 aspect-h-9">
+                    {activityImages.length > 1 ? (
+                      <AutoPlayCarousel images={activityImages} />
+                    ) : activityImages[0] && (
+                        <Image
+                          src={activityImages[0].imageUrl}
+                          alt={activityImages[0].description}
+                          layout="fill"
+                          className="object-cover"
+                          data-ai-hint={activityImages[0].imageHint}
+                        />
+                    )}
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold mb-2">{activity.title}</h3>
+                    <p className="text-muted-foreground flex-grow mb-4">{activity.description}</p>
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {activity.technologies.map((tech) => (
+                        <Badge key={tech} variant="secondary">{tech}</Badge>
+                      ))}
                     </div>
-                  )}
-                </div>
-                <h3 className="text-2xl font-bold mb-2">{activity.title}</h3>
-                <p className="text-muted-foreground flex-grow mb-4">{activity.description}</p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {activity.technologies.map((tech) => (
-                    <Badge key={tech} variant="secondary">{tech}</Badge>
-                  ))}
-                </div>
-                <div className="mt-auto flex gap-4">
-                  {activity.sourceCodeUrl && (
-                    <Button asChild variant="outline">
-                      <Link href={activity.sourceCodeUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="mr-2" /> View Source
-                      </Link>
-                    </Button>
-                  )}
-                  {activity.liveUrl && (
-                    <Button asChild>
-                      <Link href={activity.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="mr-2" /> View Live
-                      </Link>
-                    </Button>
-                  )}
-                   {activity.instagramUrl && (
-                    <Button asChild>
-                      <Link href={activity.instagramUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="mr-2" /> Visit Page
-                      </Link>
-                    </Button>
-                  )}
-                </div>
+                    <div className="mt-auto flex gap-4">
+                      {activity.sourceCodeUrl && (
+                        <Button asChild variant="outline">
+                          <Link href={activity.sourceCodeUrl} target="_blank" rel="noopener noreferrer">
+                            <Github className="mr-2" /> View Source
+                          </Link>
+                        </Button>
+                      )}
+                      {activity.liveUrl && (
+                        <Button asChild>
+                          <Link href={activity.liveUrl} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="mr-2" /> View Live
+                          </Link>
+                        </Button>
+                      )}
+                      {activity.instagramUrl && (
+                        <Button asChild>
+                          <Link href={activity.instagramUrl} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="mr-2" /> Visit Page
+                          </Link>
+                        </Button>
+                      )}
+                    </div>
+                  </div>
               </CardContent>
             </Card>
           );
