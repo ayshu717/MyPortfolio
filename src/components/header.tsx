@@ -35,13 +35,26 @@ export function Header() {
     { name: "Contact", href: "#contact" },
   ];
 
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const href = e.currentTarget.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      document.documentElement.classList.add('smooth-scroll');
+      setTimeout(() => {
+        document.documentElement.classList.remove('smooth-scroll');
+      }, 1000);
+    }
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+    }
+  };
+
   return (
     <header className={cn(
       "sticky top-0 z-50 w-full transition-all duration-300",
       isScrolled ? "border-b border-border bg-background/80 backdrop-blur-sm" : "border-b border-transparent"
     )}>
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="#home" className="flex items-center gap-2">
+        <Link href="#home" className="flex items-center gap-2" onClick={handleLinkClick}>
           <Code className="h-6 w-6 text-primary" />
           <span className="font-bold text-lg">{portfolioData.name}</span>
         </Link>
@@ -49,7 +62,7 @@ export function Header() {
         <div className="flex items-center gap-2">
            <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="group text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+              <Link key={link.href} href={link.href} className="group text-sm font-medium text-muted-foreground transition-colors hover:text-primary" onClick={handleLinkClick}>
                 {link.name}
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-primary"></span>
               </Link>
@@ -65,13 +78,13 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right">
               <div className="flex flex-col gap-6 p-6">
-                <Link href="#home" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href="#home" className="flex items-center gap-2" onClick={handleLinkClick}>
                   <Code className="h-6 w-6 text-primary" />
                   <span className="font-bold text-lg">{portfolioData.name}</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
-                    <Link key={link.href} href={link.href} className="text-lg font-medium text-muted-foreground transition-colors hover:text-primary" onClick={() => setIsMobileMenuOpen(false)}>
+                    <Link key={link.href} href={link.href} className="text-lg font-medium text-muted-foreground transition-colors hover:text-primary" onClick={handleLinkClick}>
                       {link.name}
                     </Link>
                   ))}

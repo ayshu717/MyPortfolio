@@ -1,7 +1,10 @@
+"use client";
+
 import Link from 'next/link';
 import { Github, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import { portfolioData } from '@/lib/portfolio-data';
 import { Separator } from '@/components/ui/separator';
+import * as React from 'react';
 
 export function Footer() {
   const latestProjects = [
@@ -9,6 +12,17 @@ export function Footer() {
     { title: "Leave Management System", url: "#projects" },
     { title: "PRAKRITI", url: "#projects" }
   ];
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const href = e.currentTarget.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      document.documentElement.classList.add('smooth-scroll');
+      setTimeout(() => {
+        document.documentElement.classList.remove('smooth-scroll');
+      }, 1000);
+    }
+  };
+
   return (
     <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
@@ -20,7 +34,7 @@ export function Footer() {
             <ul className="space-y-2">
               {latestProjects.map((project) => (
                 <li key={project.title}>
-                  <Link href={project.url} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <Link href={project.url} className="text-sm text-muted-foreground hover:text-primary transition-colors" onClick={handleLinkClick}>
                     {project.title}
                   </Link>
                 </li>
@@ -34,7 +48,7 @@ export function Footer() {
             <ul className="space-y-2">
               {portfolioData.footer.quickLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors" onClick={handleLinkClick}>
                     {link.name}
                   </Link>
                 </li>
