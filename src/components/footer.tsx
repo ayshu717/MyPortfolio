@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import { Github, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Github, Linkedin, Instagram, Mail, Phone, MapPin, Code } from 'lucide-react';
 import { portfolioData } from '@/lib/portfolio-data';
+import { Separator } from '@/components/ui/separator';
 
 export function Footer() {
   const latestProjects = [
@@ -13,19 +14,11 @@ export function Footer() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           
-          {/* Brand and Socials Column */}
+          {/* Brand Column */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-4 mb-4">
-              <Link href={portfolioData.socials.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <Github className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
-              </Link>
-              <Link href={portfolioData.socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
-              </Link>
-              <Link href={portfolioData.socials.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <Instagram className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
-              </Link>
-            </div>
+             <Link href="#home" className="flex items-center gap-2">
+              <span className="font-bold text-lg">{portfolioData.name}</span>
+            </Link>
           </div>
 
           {/* Latest Projects Column */}
@@ -78,6 +71,21 @@ export function Footer() {
               </li>
             </ul>
           </div>
+        </div>
+        <Separator className="my-8 bg-border/50" />
+        <div className="flex flex-col sm:flex-row items-center justify-between">
+            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Ayush Dhanawade. All rights reserved.</p>
+            <div className="flex items-center gap-4 mt-4 sm:mt-0">
+              <Link href={portfolioData.socials.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <Github className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
+              </Link>
+              <Link href={portfolioData.socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
+              </Link>
+              <Link href={portfolioData.socials.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <Instagram className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
+              </Link>
+            </div>
         </div>
       </div>
     </footer>
