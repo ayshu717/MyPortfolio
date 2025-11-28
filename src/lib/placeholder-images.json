@@ -15,7 +15,7 @@
     {
       "id": "quiz-master-2",
       "description": "Screenshot of a quiz question in Quiz Master.",
-      "imageUrl": "https://images.unsplash.com/photo-1758411898021-ef0dadaaa295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXNoYm9hcmQlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzY0MjE5NzM4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758411898021-ef0dadaaa295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXNoYm9hcmQlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzY0MjE5NzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dashboard interface"
     },
     {
@@ -56,9 +56,9 @@
     },
     {
       "id": "prakriti-1",
-      "description": "Representative image for the PRAKRITI project.",
-      "imageUrl": "https://images.unsplash.com/photo-1708243690642-002aa570c1f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxuYXR1cmUlMjB3ZWJzaXRlfGVufDB8fHx8MTc2NDMxODg2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "nature website"
+      "description": "Representative image for the PRAKRITI project, showing waste management.",
+      "imageUrl": "https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3YXN0ZSUyMG1hbmFnZW1lbnR8ZW58MHx8fHwxNzY0MzQyMTg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "waste management"
     }
   ]
 }
