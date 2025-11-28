@@ -22,7 +22,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
-        <Script src="https://elfsight.com/platform.js" strategy="lazyOnload" />
+        <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
       </head>
       <body className="font-body antialiased">
         <ThemeProvider
