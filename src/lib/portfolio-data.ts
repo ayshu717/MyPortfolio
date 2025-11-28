@@ -51,11 +51,12 @@ export const portfolioData = {
         ],
     },
     {
-        category: "Generative AI",
-        icon: BrainCircuit,
+        category: "Databases",
+        icon: Database,
         list: [
-            { name: "Prompt Engineering", icon: Code },
-            { name: "Fine-tuning", icon: Wrench },
+            { name: "MySQL", icon: Database },
+            { name: "MongoDB", icon: Database },
+            { name: "Firebase", icon: Database },
         ],
     },
     {
