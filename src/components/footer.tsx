@@ -4,10 +4,9 @@ import { portfolioData } from '@/lib/portfolio-data';
 
 export function Footer() {
   const latestProjects = [
-    { title: "StillMe Clothing", url: "#" },
-    { title: "Flora Flicks", url: "https://www.instagram.com/floraflicks_/" },
     { title: "Quiz Master", url: "https://quiz-master-sandy.vercel.app/" },
-    { title: "Portfolio Website", url: "#" }
+    { title: "Leave Management System", url: "https://github.com/d-ayush/Leave-Management-System" },
+    { title: "PRAKRITI", url: "https://d-ayush.github.io/PRAKRITI/" }
   ];
   return (
     <footer className="bg-secondary text-secondary-foreground">
