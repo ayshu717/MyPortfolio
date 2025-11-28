@@ -16,10 +16,11 @@ export function Footer() {
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const href = e.currentTarget.getAttribute('href');
     if (href && href.startsWith('#')) {
-      document.documentElement.classList.add('smooth-scroll');
-      setTimeout(() => {
-        document.documentElement.classList.remove('smooth-scroll');
-      }, 1000);
+      e.preventDefault();
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
