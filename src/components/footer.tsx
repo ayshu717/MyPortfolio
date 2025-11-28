@@ -17,7 +17,6 @@ export function Footer() {
           <div className="md:col-span-1">
             <Link href="#home" className="flex items-center gap-2 mb-4">
                 <Code className="h-8 w-8 text-primary" />
-                <span className="font-bold text-xl">{portfolioData.name}</span>
             </Link>
             <div className="flex items-center gap-4">
               <Link href={portfolioData.socials.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
