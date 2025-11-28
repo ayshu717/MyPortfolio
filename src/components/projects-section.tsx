@@ -10,7 +10,7 @@ import { AutoPlayCarousel } from '@/components/ui/auto-play-carousel';
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="bg-secondary">
+    <section id="projects" className="bg-background">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-24">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Featured Projects</h2>
