@@ -78,7 +78,7 @@ export const portfolioData = {
     {
       title: "Quiz Master",
       imageIds: ["quiz-master-1", "quiz-master-2"],
-      description: "A dynamic quiz application that allows users to test their knowledge on various subjects. Features include timed quizzes, score tracking, and a leaderboard.",
+      description: "A dynamic quiz application that allows users to test their knowledge on various subjects. Features include timed quizzes, score tracking, a leaderboard, and smooth, responsive quiz interactions for an engaging learning experience.",
       technologies: ["HTML", "CSS", "JS", "Firebase", "Tailwind CSS"],
       sourceCodeUrl: "https://github.com/d-ayush/Quiz-Master",
       liveUrl: "https://quiz-master-sandy.vercel.app/"
