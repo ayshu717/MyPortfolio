@@ -3,26 +3,24 @@ import { Code, Github, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-r
 import { portfolioData } from '@/lib/portfolio-data';
 
 export function Footer() {
+  const latestProjects = [
+    { title: "StillMe Clothing", url: "#" },
+    { title: "Flora Flicks", url: "https://www.instagram.com/floraflicks_/" },
+    { title: "Quiz Master", url: "https://quiz-master-sandy.vercel.app/" },
+    { title: "Portfolio Website", url: "#" }
+  ];
   return (
     <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* About Column */}
-          <div className="flex flex-col gap-4">
-             <Link href="#home" className="flex items-center gap-2">
-                <Code className="h-8 w-8 text-primary" />
-                <span className="font-bold text-xl">{portfolioData.name}</span>
-            </Link>
-            <p className="text-sm text-muted-foreground">{portfolioData.bio}</p>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
 
           {/* Latest Projects Column */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Latest Projects</h3>
+          <div className="lg:col-span-1">
+            <h3 className="font-semibold text-lg mb-4">LATEST PROJECTS</h3>
             <ul className="space-y-2">
-              {portfolioData.projects.map((project) => (
+              {latestProjects.map((project) => (
                 <li key={project.title}>
-                  <Link href={project.liveUrl || project.sourceCodeUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <Link href={project.url} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     {project.title}
                   </Link>
                 </li>
@@ -31,8 +29,8 @@ export function Footer() {
           </div>
 
           {/* Quick Links Column */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
+          <div className="lg:col-start-3">
+            <h3 className="font-semibold text-lg mb-4">QUICK LINKS</h3>
             <ul className="space-y-2">
               {portfolioData.footer.quickLinks.map((link) => (
                 <li key={link.name}>
@@ -44,9 +42,9 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info Column */}
+          {/* Have a Question Column */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Contact Information</h3>
+            <h3 className="font-semibold text-lg mb-4">HAVE A QUESTION?</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-0.5 shrink-0 text-primary" />
@@ -69,7 +67,10 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border/50 flex flex-col sm:flex-row items-center justify-between">
-          <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} {portfolioData.name}. All rights reserved.</p>
+           <div className="flex items-center gap-2">
+                <Code className="h-8 w-8 text-primary" />
+                <span className="font-bold text-xl">{portfolioData.name}</span>
+            </div>
           <div className="flex items-center gap-4 mt-4 sm:mt-0">
             <Link href={portfolioData.socials.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Github className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />

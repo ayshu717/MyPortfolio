@@ -6,8 +6,8 @@ export const portfolioData = {
   bio: "A curious learner and a passionate developer, exploring the endless possibilities of technology. I am driven by the desire to build things that are both useful and beautiful.",
   
   contact: {
-    email: "ayushdhanawade33@gmail.com",
-    phone: "+91 1234567890",
+    email: "717ayush@gmail.com",
+    phone: "9322022740",
     address: "Pune, Maharashtra, India",
     formspreeEndpoint: "https://formspree.io/f/YOUR_FORM_ID_HERE"
   },
@@ -67,6 +67,22 @@ export const portfolioData = {
   
   projects: [
     {
+      title: "StillMe Clothing",
+      imageIds: ["quiz-master-1", "quiz-master-2"],
+      description: "A dynamic quiz application that allows users to test their knowledge on various subjects. Features include timed quizzes, score tracking, and a leaderboard.",
+      technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "MongoDB"],
+      sourceCodeUrl: "https://github.com/d-ayush/Quiz-Master",
+      liveUrl: "https://quiz-master-sandy.vercel.app/"
+    },
+    {
+      title: "Flora Flicks",
+      imageIds: ["prakriti-1"],
+      description: "An initiative website aimed at promoting environmental awareness. The site features articles, event information, and ways for users to get involved in conservation efforts.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      sourceCodeUrl: "https://github.com/d-ayush/PRAKRITI",
+      liveUrl: "https://d-ayush.github.io/PRAKRITI/"
+    },
+    {
       title: "Quiz Master",
       imageIds: ["quiz-master-1", "quiz-master-2"],
       description: "A dynamic quiz application that allows users to test their knowledge on various subjects. Features include timed quizzes, score tracking, and a leaderboard.",
@@ -75,7 +91,7 @@ export const portfolioData = {
       liveUrl: "https://quiz-master-sandy.vercel.app/"
     },
     {
-      title: "PRAKRITI",
+      title: "Portfolio Website",
       imageIds: ["prakriti-1"],
       description: "An initiative website aimed at promoting environmental awareness. The site features articles, event information, and ways for users to get involved in conservation efforts.",
       technologies: ["HTML", "CSS", "JavaScript"],
@@ -96,6 +112,7 @@ export const portfolioData = {
 
   footer: {
     quickLinks: [
+      { name: "Home", href: "#home" },
       { name: "About", href: "#about" },
       { name: "Skills", href: "#skills" },
       { name: "Projects", href: "#projects" },
