@@ -1,3 +1,4 @@
+
 import { Award, Briefcase, Code, Database, FileJson2, Github, Users, Wrench, Rocket, Coffee, BarChart, Figma, PenTool, Camera, Film, BrainCircuit, Palette, Puzzle, Clock, Users2, Brain, AlarmClock, Pilcrow, Languages, Braces } from 'lucide-react';
 
 export const portfolioData = {
@@ -85,7 +86,7 @@ export const portfolioData = {
     {
       title: "Leave Management System",
       imageIds: ["lms-1"],
-      description: "A comprehensive system for managing employee leave requests. It streamlines the process of requesting, approving, and tracking leaves within an organization.",
+      description: "A role-based leave automation platform for Employees, Managers, and HR. I worked on the frontend, building responsive dashboards, smooth leave workflows, and real-time update interfaces for a clear and user-friendly experience.",
       technologies: ["Java", "Swing", "MySQL"],
       sourceCodeUrl: "https://github.com/d-ayush/Leave-Management-System",
       liveUrl: ""
