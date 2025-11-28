@@ -26,13 +26,13 @@ export function CoCurricularSection() {
               {activityImages.length > 1 ? (
                 <AutoPlayCarousel images={activityImages} />
               ) : activityImages[0] && (
-                <div className="aspect-w-16 aspect-h-9 overflow-hidden">
+                <div className="overflow-hidden">
                   <Image
                     src={activityImages[0].imageUrl}
                     alt={activityImages[0].description}
                     width={600}
                     height={400}
-                    className="object-cover w-full h-full"
+                    className="object-cover w-full h-auto aspect-[16/9] rounded-t-lg"
                     data-ai-hint={activityImages[0].imageHint}
                   />
                 </div>
