@@ -25,19 +25,17 @@ export function ProjectsSection() {
             return (
               <Card key={project.title} className="flex flex-col overflow-hidden">
                 <CardContent className="p-0 flex flex-col flex-grow">
-                  <div className="relative">
+                  <div className="relative aspect-[16/9] w-full">
                     {projectImages.length > 1 ? (
                       <AutoPlayCarousel images={projectImages} />
                     ) : projectImages.length === 1 ? (
-                      <div className="aspect-w-16 aspect-h-9">
-                        <Image
-                          src={projectImages[0].imageUrl}
-                          alt={projectImages[0].description}
-                          layout="fill"
-                          className="object-cover"
-                          data-ai-hint={projectImages[0].imageHint}
-                        />
-                      </div>
+                      <Image
+                        src={projectImages[0].imageUrl}
+                        alt={projectImages[0].description}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={projectImages[0].imageHint}
+                      />
                     ) : null}
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
