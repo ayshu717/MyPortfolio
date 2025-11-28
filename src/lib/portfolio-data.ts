@@ -1,4 +1,4 @@
-import { Award, Briefcase, Code, Database, FileJson2, Github, Users, Wrench, Rocket, Coffee, BarChart, Figma, PenTool, Camera, Film, BrainCircuit, Palette, Puzzle, Clock, Users2, Brain, AlarmClock } from 'lucide-react';
+import { Award, Briefcase, Code, Database, FileJson2, Github, Users, Wrench, Rocket, Coffee, BarChart, Figma, PenTool, Camera, Film, BrainCircuit, Palette, Puzzle, Clock, Users2, Brain, AlarmClock, Pilcrow, Languages, Braces } from 'lucide-react';
 
 export const portfolioData = {
   name: "Ayush Dhanawade",
@@ -39,12 +39,12 @@ export const portfolioData = {
       ]
     },
     {
-        category: "UI/UX",
-        icon: Palette,
+        category: "Languages",
+        icon: Languages,
         list: [
-            { name: "User Research", icon: Users },
-            { name: "Wireframing", icon: PenTool },
-            { name: "Prototyping", icon: Figma },
+            { name: "Java", icon: Coffee },
+            { name: "Python", icon: Pilcrow },
+            { name: "JavaScript", icon: Braces },
         ],
     },
     {
