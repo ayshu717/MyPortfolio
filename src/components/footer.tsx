@@ -12,10 +12,10 @@ export function Footer() {
   return (
     <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
           {/* Latest Projects Column */}
-          <div className="lg:col-span-1">
+          <div>
             <h3 className="font-semibold text-lg mb-4">LATEST PROJECTS</h3>
             <ul className="space-y-2">
               {latestProjects.map((project) => (
@@ -29,7 +29,7 @@ export function Footer() {
           </div>
 
           {/* Quick Links Column */}
-          <div className="lg:col-start-3">
+          <div>
             <h3 className="font-semibold text-lg mb-4">QUICK LINKS</h3>
             <ul className="space-y-2">
               {portfolioData.footer.quickLinks.map((link) => (
