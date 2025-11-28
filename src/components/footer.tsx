@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Code, Github, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Github, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import { portfolioData } from '@/lib/portfolio-data';
 
 export function Footer() {
@@ -15,10 +15,7 @@ export function Footer() {
           
           {/* Brand and Socials Column */}
           <div className="md:col-span-1">
-            <Link href="#home" className="flex items-center gap-2 mb-4">
-                <Code className="h-8 w-8 text-primary" />
-            </Link>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 mb-4">
               <Link href={portfolioData.socials.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
               </Link>
