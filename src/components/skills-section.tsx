@@ -4,13 +4,13 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 export function SkillsSection() {
   return (
     <section id="skills" className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-24">
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 animate-in fade-in slide-in-from-bottom-12 duration-500 ease-out">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Skills Showcase</h2>
         <p className="mt-2 text-lg text-muted-foreground">My technical expertise and toolset.</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {portfolioData.skills.map((skillCategory) => (
-          <Card key={skillCategory.category} className="flex flex-col">
+        {portfolioData.skills.map((skillCategory, index) => (
+          <Card key={skillCategory.category} className="flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-12 ease-out" style={{animationDelay: `${index * 150}ms`}}>
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                 <skillCategory.icon className="w-6 h-6 text-primary" />

@@ -12,18 +12,18 @@ export function ProjectsSection() {
   return (
     <section id="projects" className="bg-background">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-24">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-in fade-in slide-in-from-bottom-12 duration-500 ease-out">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Featured Projects</h2>
           <p className="mt-2 text-lg text-muted-foreground">A selection of projects I'm proud of.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {portfolioData.projects.map((project) => {
+          {portfolioData.projects.map((project, index) => {
             const projectImages = project.imageIds
               .map(id => imageSources.placeholderImages.find(img => img.id === id))
               .filter(Boolean) as (typeof imageSources.placeholderImages);
 
             return (
-              <Card key={project.title} className="flex flex-col overflow-hidden">
+              <Card key={project.title} className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-12 ease-out" style={{animationDelay: `${index * 150}ms`}}>
                 <CardContent className="p-0 flex flex-col flex-grow">
                   <div className="relative aspect-[16/9] w-full">
                     {projectImages.length > 1 ? (

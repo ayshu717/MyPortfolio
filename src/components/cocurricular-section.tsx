@@ -11,18 +11,18 @@ import Image from 'next/image';
 export function CoCurricularSection() {
   return (
     <section id="cocurricular" className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-24">
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 animate-in fade-in slide-in-from-bottom-12 duration-500 ease-out">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Co-curricular Activities</h2>
         <p className="mt-2 text-lg text-muted-foreground">Exploring passions beyond the code.</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {portfolioData.cocurricular.map((activity) => {
+        {portfolioData.cocurricular.map((activity, index) => {
           const activityImages = activity.imageIds
             .map(id => imageSources.placeholderImages.find(img => img.id === id))
             .filter(Boolean) as (typeof imageSources.placeholderImages);
 
           return (
-            <Card key={activity.title} className="flex flex-col overflow-hidden">
+            <Card key={activity.title} className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-12 ease-out" style={{animationDelay: `${index * 150}ms`}}>
               <CardContent className="p-0 flex flex-col flex-grow">
                   <div className="relative aspect-[16/9] w-full">
                     {activityImages.length > 1 ? (
