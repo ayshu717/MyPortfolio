@@ -52,7 +52,7 @@ export function HeroSection() {
                   View Resume
                 </Button>
               </DialogTrigger>
-              <DialogContent className="sm:max-w-[80vw] h-[90vh] p-0">
+              <DialogContent className="w-[90vw] max-w-[90vw] h-[90vh] md:w-[80vw] md:max-w-[1200px] p-0">
                   <div className="elfsight-app-08975646-328d-4e28-871b-6b7e5947cc4e" data-elfsight-app-lazy></div>
               </DialogContent>
             </Dialog>
