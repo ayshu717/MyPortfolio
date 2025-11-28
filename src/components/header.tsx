@@ -7,9 +7,16 @@ import { portfolioData } from '@/lib/portfolio-data';
 import { cn } from '@/lib/utils';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { Button } from '@/components/ui/button';
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+import { Menu } from 'lucide-react';
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,16 +45,39 @@ export function Header() {
           <Code className="h-6 w-6 text-primary" />
           <span className="font-bold text-lg">{portfolioData.name}</span>
         </Link>
-        <nav className="hidden md:flex items-center gap-6">
-          {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
-              {link.name}
-            </Link>
-          ))}
-        </nav>
+        
         <div className="flex items-center gap-2">
+           <nav className="hidden md:flex items-center gap-6">
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+                {link.name}
+              </Link>
+            ))}
+          </nav>
           <ThemeToggle />
-          {/* Add mobile menu trigger here if needed in future */}
+          <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+            <SheetTrigger asChild className="md:hidden">
+              <Button variant="ghost" size="icon">
+                <Menu />
+                <span className="sr-only">Open menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right">
+              <div className="flex flex-col gap-6 p-6">
+                <Link href="#home" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Code className="h-6 w-6 text-primary" />
+                  <span className="font-bold text-lg">{portfolioData.name}</span>
+                </Link>
+                <nav className="flex flex-col gap-4">
+                  {navLinks.map((link) => (
+                    <Link key={link.href} href={link.href} className="text-lg font-medium text-muted-foreground transition-colors hover:text-primary" onClick={() => setIsMobileMenuOpen(false)}>
+                      {link.name}
+                    </Link>
+                  ))}
+                </nav>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>
