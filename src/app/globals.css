@@ -35,13 +35,13 @@ body {
     --radius: 0.5rem;
   }
   .dark {
-    --background: 260 10% 8%;
+    --background: 253 22% 7%;
     --foreground: 0 0% 98%;
-    --card: 260 10% 8%;
+    --card: 253 22% 7%;
     --card-foreground: 0 0% 98%;
-    --popover: 260 10% 8%;
+    --popover: 253 22% 7%;
     --popover-foreground: 0 0% 98%;
-    --primary: 260 83% 70%;
+    --primary: 257 91% 72%;
     --primary-foreground: 0 0% 100%;
     --secondary: 260 15% 12%;
     --secondary-foreground: 0 0% 98%;
@@ -53,7 +53,7 @@ body {
     --destructive-foreground: 0 0% 98%;
     --border: 260 10% 18%;
     --input: 260 10% 18%;
-    --ring: 260 83% 70%;
+    --ring: 257 91% 72%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
