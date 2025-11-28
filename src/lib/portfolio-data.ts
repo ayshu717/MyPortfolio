@@ -87,7 +87,7 @@ export const portfolioData = {
       title: "Leave Management System",
       imageIds: ["lms-1"],
       description: "A role-based leave automation platform for Employees, Managers, and HR. I worked on the frontend, building responsive dashboards, smooth leave workflows, and real-time update interfaces for a clear and user-friendly experience.",
-      technologies: ["Java", "Swing", "MySQL"],
+      technologies: ["HTML", "CSS", "JS", "FastAPI", "Python", "MongoDB"],
       sourceCodeUrl: "https://github.com/d-ayush/Leave-Management-System",
       liveUrl: ""
     },
