@@ -24,7 +24,7 @@ export function CoCurricularSection() {
           return (
             <Card key={activity.title} className="flex flex-col overflow-hidden">
               <CardContent className="p-0 flex flex-col flex-grow">
-                  <div>
+                  <div className="relative aspect-[16/9] w-full">
                     {activityImages.length > 1 ? (
                       <AutoPlayCarousel images={activityImages} />
                     ) : activityImages[0] && (
@@ -32,7 +32,7 @@ export function CoCurricularSection() {
                         <Image
                           src={activityImages[0].imageUrl}
                           alt={activityImages[0].description}
-                          layout="fill"
+                          fill
                           className="object-cover"
                           data-ai-hint={activityImages[0].imageHint}
                         />
