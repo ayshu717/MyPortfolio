@@ -14,7 +14,7 @@ export const portfolioData = {
   },
 
   socials: {
-    github: "https://github.com/d-ayush",
+    github: "https://github.com/ayshu717",
     linkedin: "https://www.linkedin.com/in/ayush-dhanawade-089602288/",
     instagram: "https://www.instagram.com/d_ayush_33/",
   },
