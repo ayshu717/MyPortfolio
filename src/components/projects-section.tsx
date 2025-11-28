@@ -28,7 +28,7 @@ export function ProjectsSection() {
                   <div className="relative">
                     {projectImages.length > 1 ? (
                       <AutoPlayCarousel images={projectImages} />
-                    ) : projectImages[0] && (
+                    ) : projectImages.length === 1 && projectImages[0] ? (
                       <div className="aspect-w-16 aspect-h-9">
                         <Image
                           src={projectImages[0].imageUrl}
@@ -38,7 +38,7 @@ export function ProjectsSection() {
                           data-ai-hint={projectImages[0].imageHint}
                         />
                       </div>
-                    )}
+                    ) : null}
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
