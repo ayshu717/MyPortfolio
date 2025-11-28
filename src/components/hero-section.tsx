@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { portfolioData } from '@/lib/portfolio-data';
 import imageSources from '@/lib/placeholder-images.json';
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Instagram } from 'lucide-react';
+import { Github, Linkedin, Instagram, FileText, Mail } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export function HeroSection() {
@@ -24,10 +24,16 @@ export function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <Link href={portfolioData.resumeUrl} target="_blank" rel="noopener noreferrer">View Resume</Link>
+              <Link href={portfolioData.resumeUrl} target="_blank" rel="noopener noreferrer">
+                <FileText />
+                View Resume
+              </Link>
             </Button>
             <Button asChild variant="secondary" size="lg" className="transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <Link href="#contact">Contact Me</Link>
+              <Link href="#contact">
+                <Mail />
+                Contact Me
+              </Link>
             </Button>
           </div>
           <div className="flex items-center gap-6 pt-4">
@@ -47,8 +53,7 @@ export function HeroSection() {
         </div>
         <div className="flex justify-center items-center animate-in fade-in slide-in-from-bottom-12 duration-500 ease-out delay-150">
           {headshot && (
-            <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px]">
-              <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
+            <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
                 <Image
                   src={headshot.imageUrl}
                   alt={headshot.description}
@@ -57,7 +62,6 @@ export function HeroSection() {
                   priority
                   data-ai-hint={headshot.imageHint}
                 />
-              </div>
             </div>
           )}
         </div>
