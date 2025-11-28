@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "ayush-headshot",
+      "description": "A professional headshot of Ayush Dhanawade.",
+      "imageUrl": "https://images.unsplash.com/photo-1652471943570-f3590a4e52ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjQyMjI1MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "quiz-master-1",
+      "description": "Screenshot of the Quiz Master application's home screen.",
+      "imageUrl": "https://images.unsplash.com/photo-1690743300330-d190ad8f97dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxxdWl6JTIwYXBwfGVufDB8fHx8MTc2NDMxODg2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "quiz app"
+    },
+    {
+      "id": "quiz-master-2",
+      "description": "Screenshot of a quiz question in Quiz Master.",
+      "imageUrl": "https://images.unsplash.com/photo-1758411898021-ef0dadaaa295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXNoYm9hcmQlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzY0MjE5NzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dashboard interface"
+    },
+    {
+      "id": "prakriti-1",
+      "description": "Representative image for the PRAKRITI project.",
+      "imageUrl": "https://images.unsplash.com/photo-1547943498-ba60330796f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxuYXR1cmUlMjB3ZWJzaXRlfGVufDB8fHx8MTc2NDMxODg2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nature website"
+    },
+    {
+      "id": "flora-flicks-1",
+      "description": "A beautiful landscape photograph taken for Flora Flicks.",
+      "imageUrl": "https://images.unsplash.com/photo-1680225694735-e9b90d9eefd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmbG93ZXIlMjBwaG90b2dyYXBoeXxlbnwwfHx8fDE3NjQzMTg4NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "flower photography"
+    },
+    {
+      "id": "flora-flicks-2",
+      "description": "A close-up shot of a flower for Flora Flicks.",
+      "imageUrl": "https://images.unsplash.com/photo-1611049742877-bd705839ad6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYWNybyUyMHBob3RvZ3JhcGh5fGVufDB8fHx8MTc2NDMxODg2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "macro photography"
+    },
+    {
+      "id": "flora-flicks-3",
+      "description": "A vibrant nature scene from Flora Flicks.",
+      "imageUrl": "https://images.unsplash.com/photo-1526239187794-f8c27c7872ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuYXR1cmUlMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzY0Mjk2ODUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nature landscape"
+    }
+  ]
 }
