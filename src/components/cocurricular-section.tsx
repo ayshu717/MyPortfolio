@@ -56,14 +56,14 @@ export function CoCurricularSection() {
                     </div>
                     <div className={cn("flex gap-4 mt-auto", buttonCount === 1 && "justify-center")}>
                       {activity.sourceCodeUrl && (
-                        <Button asChild variant="outline">
+                        <Button asChild>
                           <Link href={activity.sourceCodeUrl} target="_blank" rel="noopener noreferrer">
                             <Github className="mr-2" /> View Source
                           </Link>
                         </Button>
                       )}
                       {activity.liveUrl && (
-                        <Button asChild>
+                        <Button asChild variant="outline">
                           <Link href={activity.liveUrl} target="_blank" rel="noopener noreferrer">
                             <ExternalLink className="mr-2" /> View Live
                           </Link>

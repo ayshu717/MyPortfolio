@@ -56,14 +56,14 @@ export function ProjectsSection() {
                     </div>
                     <div className={cn("flex gap-4 mt-auto", buttonCount === 1 && "justify-center")}>
                       {project.sourceCodeUrl && (
-                        <Button asChild variant="outline">
+                        <Button asChild>
                           <Link href={project.sourceCodeUrl} target="_blank" rel="noopener noreferrer">
                             <Github className="mr-2" /> View Source
                           </Link>
                         </Button>
                       )}
                       {project.liveUrl && (
-                        <Button asChild>
+                        <Button asChild variant="outline">
                           <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                             <ExternalLink className="mr-2" /> View Live
                           </Link>
