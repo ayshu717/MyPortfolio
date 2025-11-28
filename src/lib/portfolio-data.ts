@@ -75,22 +75,6 @@ export const portfolioData = {
   
   projects: [
     {
-      title: "StillMeStore Clothing",
-      imageIds: ["quiz-master-1", "quiz-master-2"],
-      description: "A custom apparel brand crafting personalized t-shirts, hoodies, and jackets with quality and creativity. From individual designs to bulk college & sports orders  ,we bring ideas to life with quality and creativity.",
-      technologies: ["Communication", "Digital Marketing", "Designing", "Account Handling"],
-      sourceCodeUrl: "https://github.com/d-ayush/Quiz-Master",
-      liveUrl: "https://quiz-master-sandy.vercel.app/"
-    },
-    {
-      title: "Flora Flicks",
-      imageIds: ["prakriti-1"],
-      description: "An initiative website aimed at promoting environmental awareness. The site features articles, event information, and ways for users to get involved in conservation efforts.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      sourceCodeUrl: "https://github.com/d-ayush/PRAKRITI",
-      liveUrl: "https://d-ayush.github.io/PRAKRITI/"
-    },
-    {
       title: "Quiz Master",
       imageIds: ["quiz-master-1", "quiz-master-2"],
       description: "A dynamic quiz application that allows users to test their knowledge on various subjects. Features include timed quizzes, score tracking, and a leaderboard.",
@@ -109,6 +93,15 @@ export const portfolioData = {
   ],
   
   cocurricular: [
+    {
+      title: "StillMeStore Clothing",
+      imageIds: ["quiz-master-1", "quiz-master-2"],
+      description: "A custom apparel brand crafting personalized t-shirts, hoodies, and jackets with quality and creativity. From individual designs to bulk college & sports orders, we bring ideas to life with quality and creativity.",
+      technologies: ["Communication", "Digital Marketing", "Designing", "Account Handling"],
+      sourceCodeUrl: "https://github.com/d-ayush/Quiz-Master",
+      liveUrl: "https://quiz-master-sandy.vercel.app/",
+      instagramUrl: "#"
+    },
     {
       title: "Flora Flicks",
       imageIds: ["flora-flicks-1", "flora-flicks-2", "flora-flicks-3"],
