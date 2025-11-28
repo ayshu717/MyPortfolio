@@ -41,13 +41,14 @@ export function CoCurricularSection() {
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-2xl font-bold mb-2">{activity.title}</h3>
-                    <p className="text-muted-foreground flex-grow mb-4">{activity.description}</p>
+                    <p className="text-muted-foreground mb-4">{activity.description}</p>
+                    <div className="flex-grow"></div>
                     <div className="flex flex-wrap gap-2 mb-6">
                       {activity.technologies.map((tech) => (
                         <Badge key={tech} variant="secondary">{tech}</Badge>
                       ))}
                     </div>
-                    <div className="mt-auto flex gap-4">
+                    <div className="flex gap-4">
                       {activity.sourceCodeUrl && (
                         <Button asChild variant="outline">
                           <Link href={activity.sourceCodeUrl} target="_blank" rel="noopener noreferrer">

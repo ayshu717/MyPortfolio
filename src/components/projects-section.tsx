@@ -36,17 +36,20 @@ export function ProjectsSection() {
                         className="object-cover"
                         data-ai-hint={projectImages[0].imageHint}
                       />
-                    ) : null}
+                    ) : (
+                      <div className="bg-muted w-full h-full"></div>
+                    )}
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                    <p className="text-muted-foreground mb-4 flex-grow">{project.description}</p>
+                    <p className="text-muted-foreground mb-4">{project.description}</p>
+                    <div className="flex-grow"></div>
                     <div className="flex flex-wrap gap-2 mb-6">
                       {project.technologies.map((tech) => (
                         <Badge key={tech} variant="secondary">{tech}</Badge>
                       ))}
                     </div>
-                    <div className="flex gap-4 mt-auto">
+                    <div className="flex gap-4">
                       {project.sourceCodeUrl && (
                         <Button asChild variant="outline">
                           <Link href={project.sourceCodeUrl} target="_blank" rel="noopener noreferrer">
