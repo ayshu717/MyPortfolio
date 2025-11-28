@@ -4,7 +4,7 @@ import imageSources from '@/lib/placeholder-images.json';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Instagram } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { AutoPlayCarousel } from '@/components/ui/auto-play-carousel';
 
 export function CoCurricularSection() {
@@ -34,11 +34,11 @@ export function CoCurricularSection() {
                   ))}
                 </div>
               </CardContent>
-              <CardFooter>
+              <CardFooter className="justify-center">
                 {activity.instagramUrl && (
                   <Button asChild>
                     <Link href={activity.instagramUrl} target="_blank" rel="noopener noreferrer">
-                      <Instagram className="mr-2 h-4 w-4" /> View on Instagram
+                      <ExternalLink className="mr-2 h-4 w-4" /> Visit Page
                     </Link>
                   </Button>
                 )}
