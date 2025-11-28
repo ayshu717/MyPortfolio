@@ -23,10 +23,10 @@ export function CoCurricularSection() {
           return (
             <Card key={activity.title} className="flex flex-col overflow-hidden">
               <AutoPlayCarousel images={activityImages} />
-              <CardContent className="p-6 flex flex-col flex-grow gap-y-4">
-                <h3 className="text-2xl font-bold">{activity.title}</h3>
-                <p className="text-muted-foreground flex-grow">{activity.description}</p>
-                <div className="flex flex-wrap gap-2">
+              <CardContent className="p-6 flex flex-col flex-grow">
+                <h3 className="text-2xl font-bold mb-4">{activity.title}</h3>
+                <p className="text-muted-foreground flex-grow mb-6">{activity.description}</p>
+                <div className="flex flex-wrap gap-2 mb-6">
                   {activity.technologies.map((tech) => (
                     <Badge key={tech} variant="secondary">{tech}</Badge>
                   ))}
