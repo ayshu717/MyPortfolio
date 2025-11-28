@@ -10,7 +10,7 @@ export const portfolioData = {
     email: "717ayush@gmail.com",
     phone: "9322022740",
     address: "Pune, Maharashtra, India",
-    formspreeEndpoint: "https://formspree.io/f/YOUR_FORM_ID_HERE"
+    formspreeEndpoint: "https://formspree.io/f/mjkqylyw"
   },
 
   socials: {
