@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Github, ExternalLink } from 'lucide-react';
 import { AutoPlayCarousel } from '@/components/ui/auto-play-carousel';
+import { cn } from '@/lib/utils';
 
 export function ProjectsSection() {
   return (
@@ -21,6 +22,10 @@ export function ProjectsSection() {
             const projectImages = project.imageIds
               .map(id => imageSources.placeholderImages.find(img => img.id === id))
               .filter(Boolean) as (typeof imageSources.placeholderImages);
+            
+            const hasSource = !!project.sourceCodeUrl;
+            const hasLive = !!project.liveUrl;
+            const buttonCount = [hasSource, hasLive].filter(Boolean).length;
 
             return (
               <Card key={project.title} className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-12 ease-out" style={{animationDelay: `${index * 150}ms`}}>
@@ -49,7 +54,7 @@ export function ProjectsSection() {
                         <Badge key={tech} variant="secondary">{tech}</Badge>
                       ))}
                     </div>
-                    <div className="flex gap-4 mt-auto">
+                    <div className={cn("flex gap-4 mt-auto", buttonCount === 1 && "justify-center")}>
                       {project.sourceCodeUrl && (
                         <Button asChild variant="outline">
                           <Link href={project.sourceCodeUrl} target="_blank" rel="noopener noreferrer">

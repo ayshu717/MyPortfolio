@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Github, ExternalLink } from 'lucide-react';
 import { AutoPlayCarousel } from '@/components/ui/auto-play-carousel';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 export function CoCurricularSection() {
   return (
@@ -20,6 +21,11 @@ export function CoCurricularSection() {
           const activityImages = activity.imageIds
             .map(id => imageSources.placeholderImages.find(img => img.id === id))
             .filter(Boolean) as (typeof imageSources.placeholderImages);
+
+          const hasSource = !!activity.sourceCodeUrl;
+          const hasLive = !!activity.liveUrl;
+          const hasInsta = !!activity.instagramUrl;
+          const buttonCount = [hasSource, hasLive, hasInsta].filter(Boolean).length;
 
           return (
             <Card key={activity.title} className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-in fade-in slide-in-from-bottom-12 ease-out" style={{animationDelay: `${index * 150}ms`}}>
@@ -48,7 +54,7 @@ export function CoCurricularSection() {
                         <Badge key={tech} variant="secondary">{tech}</Badge>
                       ))}
                     </div>
-                    <div className="flex gap-4 mt-auto">
+                    <div className={cn("flex gap-4 mt-auto", buttonCount === 1 && "justify-center")}>
                       {activity.sourceCodeUrl && (
                         <Button asChild variant="outline">
                           <Link href={activity.sourceCodeUrl} target="_blank" rel="noopener noreferrer">
