@@ -1,4 +1,4 @@
-import { Award, Briefcase, Code, Database, FileJson2, Github, Users, Wrench, Rocket, Coffee, BarChart, Figma, PenTool, Camera, Film, BrainCircuit, Palette } from 'lucide-react';
+import { Award, Briefcase, Code, Database, FileJson2, Github, Users, Wrench, Rocket, Coffee, BarChart, Figma, PenTool, Camera, Film, BrainCircuit, Palette, Puzzle, Clock, Users2, Brain, AlarmClock } from 'lucide-react';
 
 export const portfolioData = {
   name: "Ayush Dhanawade",
@@ -32,6 +32,10 @@ export const portfolioData = {
       list: [
         { name: "Business", icon: Briefcase },
         { name: "Startups", icon: Rocket },
+        { name: "Problem Solving", icon: Puzzle },
+        { name: "UI/UX Thinking", icon: PenTool },
+        { name: "Leadership", icon: Users2 },
+        { name: "Time Management", icon: AlarmClock },
       ]
     },
     {
