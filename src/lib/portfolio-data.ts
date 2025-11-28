@@ -16,7 +16,7 @@ export const portfolioData = {
   socials: {
     github: "https://github.com/ayshu717",
     linkedin: "https://www.linkedin.com/in/ayush-dhanawade717/",
-    instagram: "https://www.instagram.com/4y5hu",
+    instagram: "https://www.instagram.com/4y5hu?igsh=YjJnemdxbzdhZmY2",
   },
 
   resumeUrl: "/Ayush_Dhanawade_Resume.pdf",
@@ -88,7 +88,7 @@ export const portfolioData = {
       imageIds: ["lms-1"],
       description: "A role-based leave automation platform for Employees, Managers, and HR. I worked on the frontend, building responsive dashboards, smooth leave workflows, and real-time update interfaces for a clear and user-friendly experience.",
       technologies: ["HTML", "CSS", "JS", "FastAPI", "Python", "MongoDB"],
-      sourceCodeUrl: "https://github.com/d-ayush/Leave-Management-System",
+      sourceCodeUrl: "https://github.com/ayshu717/Leave_Management_System7",
       liveUrl: ""
     },
     {
@@ -96,7 +96,7 @@ export const portfolioData = {
       imageIds: ["prakriti-1"],
       description: "An AI-enabled waste-management platform designed to classify waste, display analytics, and streamline collection processes. Still in development, featuring work on dashboard UI, interactive components, and integration with AI prediction modules.",
       technologies: ["HTML", "CSS", "JavaScript", "Firebase", "Tailwind CSS"],
-      sourceCodeUrl: "https://github.com/d-ayush/PRAKRITI",
+      sourceCodeUrl: "https://d-ayush.github.io/PRAKRITI/",
       liveUrl: ""
     }
   ],
