@@ -41,8 +41,8 @@ export function ProjectsSection() {
                 <CardHeader>
                   <CardTitle>{project.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="flex-grow py-4">
-                  <p className="text-sm text-muted-foreground mb-6">{project.description}</p>
+                <CardContent className="flex-grow">
+                  <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <Badge key={tech} variant="secondary">{tech}</Badge>
