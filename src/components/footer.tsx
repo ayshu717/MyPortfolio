@@ -42,9 +42,9 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Have a Question Column */}
+          {/* Contact Information Column */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">HAVE A QUESTION?</h3>
+            <h3 className="font-semibold text-lg mb-4">Contact Information</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-0.5 shrink-0 text-primary" />
