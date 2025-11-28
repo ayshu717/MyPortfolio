@@ -5,9 +5,9 @@ import { Separator } from '@/components/ui/separator';
 
 export function Footer() {
   const latestProjects = [
-    { title: "Quiz Master", url: "https://quiz-master-sandy.vercel.app/" },
-    { title: "Leave Management System", url: "https://github.com/d-ayush/Leave-Management-System" },
-    { title: "PRAKRITI", url: "https://d-ayush.github.io/PRAKRITI/" }
+    { title: "Quiz Master", url: "#projects" },
+    { title: "Leave Management System", url: "#projects" },
+    { title: "PRAKRITI", url: "#projects" }
   ];
   return (
     <footer className="bg-secondary text-secondary-foreground">
@@ -20,7 +20,7 @@ export function Footer() {
             <ul className="space-y-2">
               {latestProjects.map((project) => (
                 <li key={project.title}>
-                  <Link href={project.url} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <Link href={project.url} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     {project.title}
                   </Link>
                 </li>
