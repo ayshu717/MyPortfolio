@@ -114,7 +114,7 @@ export const portfolioData = {
       imageIds: ["flora-flicks-1", "flora-flicks-2", "flora-flicks-3"],
       description: "Framing the whispers of nature one cloud, one sunset, one moment at a time. A space for Photography, Cinematic Shots, and Cloud Chasing. Reached 500K+ people with visuals of sunsets, silence, and soft hues.",
       technologies: ["Photography", "Cinematic Shots", "Cloud Chasing", "Digital StoryTelling", "Editing"],
-      instagramUrl: "https://www.instagram.com/floraflicks_/"
+      instagramUrl: "https://www.instagram.com/flora_flicks?igsh=NHQ3Y2d3ZGw5bDd2"
     }
   ],
 

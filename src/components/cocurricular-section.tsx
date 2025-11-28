@@ -4,7 +4,7 @@ import imageSources from '@/lib/placeholder-images.json';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink, Instagram } from 'lucide-react';
 import { AutoPlayCarousel } from '@/components/ui/auto-play-carousel';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
@@ -72,7 +72,7 @@ export function CoCurricularSection() {
                       {activity.instagramUrl && (
                         <Button asChild>
                           <Link href={activity.instagramUrl} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="mr-2" /> Visit Page
+                            <Instagram className="mr-2" /> Visit Page
                           </Link>
                         </Button>
                       )}
