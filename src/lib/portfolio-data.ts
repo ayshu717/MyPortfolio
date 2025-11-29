@@ -1,5 +1,5 @@
 
-import { Award, Briefcase, Code, Database, FileJson2, Github, Users, Wrench, Rocket, Coffee, BarChart, Figma, PenTool, Camera, Film, BrainCircuit, Palette, Puzzle, Clock, Users2, Brain, AlarmClock, Pilcrow, Languages, Braces } from 'lucide-react';
+import {  Award, Briefcase, Code, Database, FileJson2, Github, Users, Wrench, Rocket, Coffee, BarChart, Figma, PenTool, Camera, Film, BrainCircuit, Palette, Puzzle, Clock, Users2, Brain, AlarmClock, Pilcrow, RectangleVertical, Braces } from 'lucide-react';
 
 export const portfolioData = {
   name: "Ayush Dhanawade",
@@ -41,7 +41,7 @@ export const portfolioData = {
     },
     {
         category: "Languages",
-        icon: Languages,
+        icon: RectangleVertical,
         list: [
             { name: "Java", icon: Coffee },
             { name: "HTML", icon: Code },
