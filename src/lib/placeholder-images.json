@@ -13,12 +13,7 @@
       "imageUrl": "/images/quiz-master.png",
       "imageHint": "quiz app"
     },
-    {
-      "id": "quiz-master-2",
-      "description": "Image of a quiz question in Quiz Master.",
-      "imageUrl": "https://images.unsplash.com/photo-1758411898021-ef0dadaaa295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXNoYm9hcmQlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzY0MjE5NzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dashboard interface"
-    },
+    
     {
       "id": "flora-flicks-1",
       "description": "A beautiful landscape photograph taken for Flora Flicks.",
@@ -32,12 +27,7 @@
       "imageUrl": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjbG90aHN8ZW58MHx8fHwxNzY0MzM0OTQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "custom apparel"
     },
-    {
-      "id": "stillme-2",
-      "description": "A collection of custom hoodies from StillMeStore.",
-      "imageUrl": "https://images.unsplash.com/photo-1594883422096-c7f0b81e0133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxob29kaWUlMjBjb2xsZWN0aW9ufGVufDB8fHx8MTc2NDMyOTk4NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "hoodie collection"
-    },
+   
     {
       "id": "lms-1",
       "description": "Dashboard of the Leave Management System.",
